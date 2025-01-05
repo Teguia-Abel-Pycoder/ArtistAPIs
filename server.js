@@ -1,8 +1,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');  // Import the cors package
 const sequelize = require('./config/db'); // Sequelize connection
 
 const app = express();
+
+// Enable CORS for all routes (if you want to allow all origins)
+app.use(cors());
+
+// Or allow only specific origin (for example, if you're running Angular on localhost:4200)
+app.use(cors({
+  origin: 'http://localhost:4200' // Allow only localhost:4200
+}));
 
 // Middleware to parse JSON request bodies
 app.use(bodyParser.json());
