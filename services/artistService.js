@@ -1,45 +1,61 @@
 const Artist = require('../models/artist.model');
- // Import the Artist model
-const { Op } = require('sequelize');  // Ensure Op is included for Sequelize's "in" operator
+const { Op } = require('sequelize');
 
-// Logic to create an artist
+// Create an artist
 const createArtistLogic = async (artistData) => {
-  return await Artist.create(artistData);  // Pass the data to the model to create the artist
-};
-
-// Logic to fetch all artists
-const getArtistsLogic = async () => {
-  return await Artist.findAll();  // Fetch all artists from the database
-};
-
-// Logic to delete artists
-const deleteArtistsLogic = async (ids) => {
-  // Split the comma-separated IDs into an array and convert to integers
-  const artistIds = ids.split(',').map(id => parseInt(id));
-
-  // Use Sequelize to delete artists whose ID is in the artistIds array
-  const deletedArtists = await Artist.destroy({
-    where: {
-      artistId: {
-        [Op.in]: artistIds, // Sequelize "in" operator to match any of the given artistIds
-      }
-    }
-  });
-
-  return deletedArtists;  // Returns the number of deleted rows (affected rows)
-};
-
-// Logic to update an artist
-const updateArtistLogic = async (id, updatedData) => {
-  const artist = await Artist.findOne({ where: { artistId: id } });
-
-  if (!artist) {
-    return null;  // Return null if no artist is found
+  try {
+    return await Artist.create(artistData);
+  } catch (error) {
+    throw new Error('Error creating artist: ' + error.message);
   }
-
-  // Update artist details
-  await artist.update(updatedData);
-  return artist;  // Return updated artist
 };
 
-module.exports = { createArtistLogic, getArtistsLogic, deleteArtistsLogic, updateArtistLogic };
+// Fetch all artists
+const getArtistsLogic = async () => {
+  try {
+    return await Artist.findAll();
+  } catch (error) {
+    throw new Error('Error fetching artists: ' + error.message);
+  }
+};
+
+// Delete artists by IDs
+const deleteArtistsLogic = async (ids) => {
+  try {
+    const artistIds = ids.split(',').map(id => parseInt(id));
+    const deletedArtists = await Artist.destroy({
+      where: {
+        artistId: {
+          [Op.in]: artistIds
+        }
+      }
+    });
+    return deletedArtists;
+  } catch (error) {
+    throw new Error('Error deleting artists: ' + error.message);
+  }
+};
+
+// Update an artist
+const updateArtistLogic = async (id, updatedData) => {
+  try {
+    const artist = await Artist.findOne({ where: { artistId: id } });
+    if (!artist) return null;
+
+    await artist.update(updatedData);
+    return artist;
+  } catch (error) {
+    throw new Error('Error updating artist: ' + error.message);
+  }
+};
+
+// Get artist details by ID
+const getArtistDetailsLogic = async (id) => {
+  try {
+    return await Artist.findOne({ where: { artistId: id } });
+  } catch (error) {
+    throw new Error('Error fetching artist details: ' + error.message);
+  }
+};
+
+module.exports = { createArtistLogic, getArtistsLogic, deleteArtistsLogic, updateArtistLogic, getArtistDetailsLogic };
