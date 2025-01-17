@@ -64,7 +64,7 @@ const deleteArtists = async (req, res) => {
   }
 };
 
-// Update artist details
+// Update artist
 const updateArtist = async (req, res) => {
   try {
     const { id } = req.params;
