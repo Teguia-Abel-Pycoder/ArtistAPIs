@@ -36,7 +36,7 @@ const createArtist = async (req, res) => {
   }
 };
 
-// Get all artists
+
 const getAllArtists = async (req, res) => {
   try {
     const artists = await getArtistsLogic();
