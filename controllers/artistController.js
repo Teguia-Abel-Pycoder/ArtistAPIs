@@ -99,7 +99,7 @@ const updateArtist = async (req, res) => {
   }
 };
 
-// Get artist details by ID
+// Get artist by ID
 const getArtistDetails = async (req, res) => {
   try {
     const { id } = req.params;
