@@ -47,7 +47,7 @@ const getAllArtists = async (req, res) => {
   }
 };
 
-// Delete artists by 
+// Delete artists 
 const deleteArtists = async (req, res) => {
   try {
     const { ids } = req.params;
