@@ -1,7 +1,7 @@
 const { createArtistLogic, getArtistsLogic, deleteArtistsLogic, updateArtistLogic, getArtistDetailsLogic } = require('../services/artistService');
 const upload = require('../middleware/upload');
 
-// Create an artist
+// Create 
 const createArtist = async (req, res) => {
   try {
     const { artistId, artistName, stageName, numberOfAlbums, artistRating, recordLabel, publishingHouse, careerStartDate } = req.body;
