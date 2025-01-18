@@ -14,7 +14,7 @@ const SocialMediaLink = sequelize.define('SocialMediaLink', {
   },
 });
 
-// Establish the relationship between Artist and SocialMediaLink
+// Establish the  between Artist and SocialMediaLink
 Artist.hasMany(SocialMediaLink, {
   foreignKey: 'artistId',
   onDelete: 'CASCADE',  // Delete social media links when the artist is deleted
