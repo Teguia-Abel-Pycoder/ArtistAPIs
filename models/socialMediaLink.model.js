@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/db');  // Adjust the path as necessary
 const Artist = require('./artist.model');  // Import the Artist model to establish the relationship
 
-// Define the SocialMediaLink model
+// Define the SocialMediaLink 
 const SocialMediaLink = sequelize.define('SocialMediaLink', {
   platform: {
     type: DataTypes.STRING,
