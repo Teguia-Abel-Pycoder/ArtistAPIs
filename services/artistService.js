@@ -1,7 +1,7 @@
 const Artist = require('../models/artist.model');
 const { Op } = require('sequelize');
 
-// Create an artist
+// Create an 
 const createArtistLogic = async (artistData) => {
   try {
     return await Artist.create(artistData);
