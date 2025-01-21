@@ -36,7 +36,7 @@ const deleteArtistsLogic = async (ids) => {
   }
 };
 
-// Update an artist
+// Update an 
 const updateArtistLogic = async (id, updatedData) => {
   try {
     const artist = await Artist.findOne({ where: { artistId: id } });
