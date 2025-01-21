@@ -49,7 +49,7 @@ const updateArtistLogic = async (id, updatedData) => {
   }
 };
 
-// Get artist details 
+// Get artist 
 const getArtistDetailsLogic = async (id) => {
   try {
     return await Artist.findOne({ where: { artistId: id } });
