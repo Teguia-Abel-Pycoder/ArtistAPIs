@@ -10,7 +10,7 @@ const createArtistLogic = async (artistData) => {
   }
 };
 
-//  all 
+//   
 const getArtistsLogic = async () => {
   try {
     return await Artist.findAll();
