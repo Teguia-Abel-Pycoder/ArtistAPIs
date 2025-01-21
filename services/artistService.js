@@ -19,7 +19,7 @@ const getArtistsLogic = async () => {
   }
 };
 
-// Delete artists 
+// Delete 
 const deleteArtistsLogic = async (ids) => {
   try {
     const artistIds = ids.split(',').map(id => parseInt(id));
