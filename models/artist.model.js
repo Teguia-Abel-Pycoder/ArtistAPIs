@@ -13,7 +13,6 @@ const Artist = sequelize.define('Artist', {
     
     allowNull: false
   },
-  
   artistImage: {
     type: DataTypes.STRING,
     allowNull: false
