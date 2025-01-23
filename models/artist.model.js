@@ -6,7 +6,6 @@ const Artist = sequelize.define('Artist', {
     primaryKey: true,
     autoIncrement: true
   },
-  
   artistName: {
     type: DataTypes.STRING,
     
