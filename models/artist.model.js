@@ -17,7 +17,6 @@ const Artist = sequelize.define('Artist', {
     type: DataTypes.STRING,
     allowNull: false
   }, 
-  
   stageName: {
     type: DataTypes.STRING,
     allowNull: false
