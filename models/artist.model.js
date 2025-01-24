@@ -34,6 +34,7 @@ const Artist = sequelize.define('Artist', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  
   careerStartDate: {
     type: DataTypes.DATE,
     allowNull: false
