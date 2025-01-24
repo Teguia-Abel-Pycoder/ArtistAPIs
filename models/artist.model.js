@@ -26,6 +26,7 @@ const Artist = sequelize.define('Artist', {
     type: DataTypes.FLOAT,
     allowNull: false
   },
+  
   recordLabel: {
     type: DataTypes.STRING,
     allowNull: false
