@@ -18,6 +18,7 @@ const Artist = sequelize.define('Artist', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  
   numberOfAlbums: {
     type: DataTypes.INTEGER,
     allowNull: false
