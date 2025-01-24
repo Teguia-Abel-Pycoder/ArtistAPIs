@@ -22,6 +22,7 @@ const Artist = sequelize.define('Artist', {
     type: DataTypes.INTEGER,
     allowNull: false
   },
+  
   artistRating: {
     type: DataTypes.FLOAT,
     allowNull: false
