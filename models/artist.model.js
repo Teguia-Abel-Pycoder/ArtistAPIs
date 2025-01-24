@@ -30,6 +30,7 @@ const Artist = sequelize.define('Artist', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  
   publishingHouse: {
     type: DataTypes.STRING,
     allowNull: false
