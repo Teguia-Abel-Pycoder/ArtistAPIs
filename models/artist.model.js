@@ -39,4 +39,5 @@ const Artist = sequelize.define('Artist', {
     allowNull: false
   }
 });
+
 module.exports = Artist;
