@@ -15,7 +15,6 @@
 // // Export the pool for use in other parts of the app
 // 
 
-
 const { Sequelize } = require('sequelize');
 
 // Set up the connection to the MySQL database
