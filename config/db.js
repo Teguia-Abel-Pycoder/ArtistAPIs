@@ -13,7 +13,7 @@
 // });
 
 // // Export the pool for use in other parts of the app
-// module.exports = pool.promise();
+// module.exports 
 
 
 const { Sequelize } = require('sequelize');
