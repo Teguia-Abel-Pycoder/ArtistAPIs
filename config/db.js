@@ -11,7 +11,6 @@
 //   connectionLimit: 10,
 //   queueLimit: 0,
 // });
-
 // // Export the pool for use in other parts of the ap
 const { Sequelize } = require('sequelize');
 
