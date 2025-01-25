@@ -11,7 +11,8 @@
 //   connectionLimit: 10,
 //   queueLimit: 0,
 // });
-// // Export the pool for use in other parts of the ap
+
+// // Export the pool for use in other parts of 
 const { Sequelize } = require('sequelize');
 
 // Set up the connection to the MySQL 
