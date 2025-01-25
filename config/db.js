@@ -14,7 +14,7 @@
 // // Export the pool for use in other parts of the ap
 const { Sequelize } = require('sequelize');
 
-// Set up the connection to the MySQL database
+// Set up the connection to the MySQL 
 const sequelize = new Sequelize('sql5755850', 'sql5755850', 'yA6Bby83hg', {
   host: 'sql5.freesqldatabase.com',
   dialect: 'mysql',
