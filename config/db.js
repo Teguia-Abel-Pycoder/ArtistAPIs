@@ -10,7 +10,7 @@
 //   waitForConnections: true,
 //   connectionLimit: 10,
 //   queueLimit: 0
-// // Export the pool  
+// // Export the pool 
 const { Sequelize } = require('sequelize');
 
 // Set up the connection to the MySQL 
