@@ -10,7 +10,7 @@
 //   waitForConnections: true,
 //   connectionLimit: 10,
 //   queueLimit: 0,
-// 
+//
 // // Export the pool for use in other part
 const { Sequelize } = require('sequelize');
 
