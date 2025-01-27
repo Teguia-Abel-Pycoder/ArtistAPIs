@@ -9,7 +9,7 @@
 //   database: process.env.DB_NAME || 'artistdb',
 //   waitForConnections: true,
 //   connectionLimit: 10,
-//   queueLimit:l
+//   queueLimit:
 // // Export the pool 
 const { Sequelize } = require('sequelize');
 
