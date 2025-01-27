@@ -9,7 +9,7 @@
 //   database: process.env.DB_NAME || 'artistdb',
 //   waitForConnections: true,
 //   connectionLimit: 10,
-//   queueLi
+//   queueL
 // // Export the po
 const { Sequelize } = require('sequelize');
 
