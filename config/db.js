@@ -10,7 +10,7 @@
 //   waitForConnections: true,
 //   connectionLimit: 10
 // 
-// // Export the p
+// // Export the 
 const { Sequelize } = require('sequelize');
 // Set up the connection to the MySQL 
 const sequelize = new Sequelize('sql5755850', 'sql5755850', 'yA6Bby83hg', {
