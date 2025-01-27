@@ -9,7 +9,6 @@
 //   database: process.env.DB_NAME || 'artistdb',
 //   waitForConnections: true,
 //   connectionLimit: 10
-
 // // Export th
 const { Sequelize } = require('sequelize');
 // Set up the connection to the MySQL 
