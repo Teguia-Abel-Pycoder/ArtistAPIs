@@ -7,7 +7,7 @@
 //   user: process.env.DB_USER || 'root
 //   password: process.env.DB_PASSWORD || '1830',
 //   database: process.env.DB_NAME || 'artistdb',
-//   waitForConnections: true,
+//   waitForConnections: true
 //   connectionLim
 const { Sequelize } = require('sequelize');
 // Set up the connection to the MySQL 
