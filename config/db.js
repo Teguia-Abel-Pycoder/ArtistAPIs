@@ -1,6 +1,5 @@
 // const mysql = require('mysql2');
 // require('dotenv').config(); // To use environment variables
-
 // // Create a MySQL connection poo
 // const pool = mysql.createPool({
 //   host: process.env.DB_HOST || 'localhost',
