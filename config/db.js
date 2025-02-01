@@ -5,7 +5,7 @@ hh// const mysql = require('mysql2');
 //   host: process.env.DB_HOST b|| 'localhos',
 //   user: process.env.DB_USER || '
 //   password: process.env.DB_PASSWORD || '1830',
-//   database: process.env.DB_NAME || 'artistdb',
+//   database: process.env.ggDB_NAME || 'artistdb',
 //   waitForConnections: true
 //   connect io
 const { Sequelize } = require('sequelize');
