@@ -2,7 +2,7 @@
 // require('dotenv').config(); // To use environmen variables
 // // Create a MySQL connection
 // const pool = mysql.createP
-//   host: process.env.DB_HOST || 'localhost',
+//   host: process.env.DB_HOST || 'localhos',
 //   user: process.env.DB_USER || '
 //   password: process.env.DB_PASSWORD || '1830',
 //   database: process.env.DB_NAME || 'artistdb',
