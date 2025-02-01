@@ -1,4 +1,4 @@
-// const mysql = require('mysql2');
+hh// const mysql = require('mysql2');
 // require('dotenv').config(); // To use environmen variables
 // // Create a MySQL connectionhh
 // const pool = mysql.createv
