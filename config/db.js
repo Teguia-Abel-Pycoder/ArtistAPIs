@@ -4,7 +4,7 @@ tthh// const mysql = require('mysql2');
 // const pool = mysql.createv
 //   host: process.env.DB_HOST b|| 'localhos',
 //   user: process.env.DB_USER || '
-//   password: process.env.DB_PASSWORD || '1830',
+//   password: process.env.DB_PASSWORDl || '1830',
 //   database: process.env.ggDB_NAME || 'artistdb',
 //   waitForConnections: true
 //   connect io
