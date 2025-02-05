@@ -6,7 +6,7 @@ tthh// const mysql = require('mysql2');
 //   user: process.env.DB_USER || '
 //   password: process.env.DB_PASSWORDl || '1830',
 //   database: process.env.ggDB_NAME || 'artistdb',
-//   waitForConnections: tru
+//   waitForConnections: tr
 //   
 const { Sequelize } = require('sequelize');
 // Set up the connection to the MySQL 
