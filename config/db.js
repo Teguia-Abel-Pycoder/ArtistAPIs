@@ -4,7 +4,7 @@ tthh// const mysql = require('mysql2');
 // const pool
 //   host: process.en
 //   user: process
-//   password: process.env.DB_ || 183',
+//   password: process.env.DB_ || 183'
 //   database: process.env.ggDB_NAME || 'artistdb',
 const { Sequelize } = require('sequelize');
 // Set up the connection to the MySQL 
