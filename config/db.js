@@ -1,7 +1,7 @@
 tthh// const mysql = require('mysql2');
 // require('dotenv').config(); // To use environmen variables
 // // Create a MySQL 
-// const pool =
+// const pool 
 //   host: process.env.DB_HOST b|| 'localhos
 //   user: process.env.DB_U
 //   password: process.env.DB_ || 183',
