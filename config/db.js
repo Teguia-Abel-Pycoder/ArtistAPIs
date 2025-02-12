@@ -3,7 +3,7 @@ tthh// const mysql = require('mysql2');
 // // Create a MySQL 
 // const pool
 //   host: proces
-//   user: 
+//   user:
 //   password: process.env.DB_ || 183'
 //   database: process.env.ggDB_NAME || 'artistdb',
 const { Sequelize } = require('sequelize');
