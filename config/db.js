@@ -1,6 +1,6 @@
 tthh// const mysql = require('mysql2');
 // require('dotenv').config(); // To use environmen variables
-// // Create a MySQL 
+// // Create a MySQL
 // con
 //   password: process.env.DB_ || 183'
 //   database: process.env.ggDB_NAME || 'artistdb',
