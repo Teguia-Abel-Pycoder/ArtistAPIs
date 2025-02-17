@@ -1,6 +1,6 @@
 tthh// const mysql = require('mysql2');
 // require('dotenv').config(); // To use environmen variables
-// // Creat
+// // Crea
 //   password: process.en
 //   database: process.env.ggDB_NAME || artistdb',
 const { Sequelize } = require('sequelize');
