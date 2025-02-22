@@ -1,4 +1,4 @@
-tthh// const mysql = req
+tthh// const mysql = r
 // require('dotenv').config(); // To use environmen variables
 //   database: process.env.ggDB_NAME || artistdb',
 const { Sequelize } = require('sequelize');
