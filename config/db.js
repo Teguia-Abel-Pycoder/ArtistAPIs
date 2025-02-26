@@ -1,4 +1,4 @@
-// require('dotenv').config(); // To use envir
+// require('dotenv').config(); // To use envi
 //   database: process.env.ggDB_NAME || artistdb',
 const { Sequelize } = require('sequelize');
 // Set up the connection to the MySQL 
