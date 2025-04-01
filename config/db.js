@@ -10,3 +10,4 @@ const sequelize = new Sequelize('sql5755850', 'sql5755850', 'yA6Bby83hg', {
 });
 
 module.exports = sequelize;
+ 
