@@ -1,7 +1,8 @@
 const { createArtistLogic, getArtistsLogic, deleteArtistsLogic, updateArtistLogic, getArtistDetailsLogic } = require('../services/artistService');
 const upload = require('../middleware/upload');
 
-//
+// ? Funtion to create artist
+// ?  This function handles the creation of a new artist. It expects the artist's details in the request body and an image file in the request.
 const createArtist = async (req, res) => {
   try {
     const { artistId, artistName, stageName, numberOfAlbums, artistRating, recordLabel, publishingHouse, careerStartDate } = req.body;
