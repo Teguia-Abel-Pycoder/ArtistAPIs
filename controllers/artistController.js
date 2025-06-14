@@ -1,6 +1,5 @@
 const { createArtistLogic, getArtistsLogic, deleteArtistsLogic, updateArtistLogic, getArtistDetailsLogic } = require('../services/artistService');
 const upload = require('../middleware/upload');
-
 //
 const createArtist = async (req, res) => {
   try {
