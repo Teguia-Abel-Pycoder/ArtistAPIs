@@ -9,6 +9,7 @@ const createArtist = async (req, res) => {
       return res.status(400).json({ message: 'Artist image is required' });
     }
 
+
     const artistImage = `/uploads/artists/${req.file.filename}`;  // Image path
 
     if (!artistId || !artistName || !stageName || !numberOfAlbums || !artistRating || !recordLabel || !publishingHouse || !careerStartDate) {
